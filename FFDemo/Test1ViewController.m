@@ -34,9 +34,9 @@
     [super viewDidLoad];
 
     // 获取网络数据，要按照顺序
-//    [self getNetData:YES];
+    [self getNetData:YES];
     
-    [self downloadData];
+//    [self downloadData];
 }
 
 #pragma mark - Request
@@ -111,7 +111,7 @@
         [NSFileManager createDirectorysAtPath:path];
     }
     
-    [FFBaseDownloadRequest downloadFileWithURLString:@"http://dldir1.qq.com/qqfile/QQforMac/QQ_V5.5.1.dmg" downloadPath:path fileName:[NSString stringWithFormat:@"%@", @"1"] progressBlock:^(float progress, NSUInteger bytesRead, unsigned long long totalRead, unsigned long long totalExpectedToRead) {
+    [FFBaseDownloadRequest downloadFileWithURLString:@"http://dldir1.qq.com/qqfile/QQforMac/QQ_V5.5.1.dmg" downloadPath:path fileName:[NSString stringWithFormat:@"%@", @"1.zip"] progressBlock:^(float progress, NSUInteger bytesRead, unsigned long long totalRead, unsigned long long totalExpectedToRead) {
         
         NSLog(@"---------->> %f", progress);
         

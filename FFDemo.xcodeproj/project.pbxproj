@@ -49,6 +49,7 @@
 		5792F0921EB9C2CB00E42A5C /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5792F0901EB9C2CB00E42A5C /* BookCell.xib */; };
 		57BD80C01EBC7E0E00B15231 /* Test3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BD80BE1EBC7E0E00B15231 /* Test3ViewController.m */; };
 		57BD80C11EBC7E0E00B15231 /* Test3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57BD80BF1EBC7E0E00B15231 /* Test3ViewController.xib */; };
+		57BD80C31EBC8EF300B15231 /* nav_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 57BD80C21EBC8EF300B15231 /* nav_back.png */; };
 		57CEF8911EA8511C009E7584 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CEF8901EA8511C009E7584 /* main.m */; };
 		57CEF8941EA8511C009E7584 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CEF8931EA8511C009E7584 /* AppDelegate.m */; };
 		57CEF8971EA8511C009E7584 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CEF8961EA8511C009E7584 /* ViewController.m */; };
@@ -213,6 +214,7 @@
 		57BD80BD1EBC7E0E00B15231 /* Test3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test3ViewController.h; sourceTree = "<group>"; };
 		57BD80BE1EBC7E0E00B15231 /* Test3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test3ViewController.m; sourceTree = "<group>"; };
 		57BD80BF1EBC7E0E00B15231 /* Test3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Test3ViewController.xib; sourceTree = "<group>"; };
+		57BD80C21EBC8EF300B15231 /* nav_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_back.png; sourceTree = "<group>"; };
 		57CEF88C1EA8511C009E7584 /* FFDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CEF8901EA8511C009E7584 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		57CEF8921EA8511C009E7584 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -569,6 +571,7 @@
 		57CEF88F1EA8511C009E7584 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				57BD80C21EBC8EF300B15231 /* nav_back.png */,
 				570522A91EB336C3005C368D /* benz.png */,
 				57CEF8901EA8511C009E7584 /* main.m */,
 			);
@@ -1050,6 +1053,7 @@
 				570522AA1EB336C3005C368D /* benz.png in Resources */,
 				576267B81EA9FBDF00400ABA /* FFMoreFooterView.xib in Resources */,
 				570522AF1EB34CF7005C368D /* Main.storyboard in Resources */,
+				57BD80C31EBC8EF300B15231 /* nav_back.png in Resources */,
 				57783C061EAA0DAB00069CBA /* Test2ViewController.xib in Resources */,
 				5792F0921EB9C2CB00E42A5C /* BookCell.xib in Resources */,
 				57783C101EAA0DCC00069CBA /* Test4ViewController.xib in Resources */,

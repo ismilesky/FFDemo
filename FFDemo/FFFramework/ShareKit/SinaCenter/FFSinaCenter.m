@@ -111,7 +111,7 @@ static FFSinaCenter *instance;
             break;
         case ShareContentType_Link:{
             WBWebpageObject *webpageObject = [WBWebpageObject object];
-            webpageObject.objectID = @"VistaKTX";
+            webpageObject.objectID = @"FFDemo";
             webpageObject.title = contentInfo.title;
             webpageObject.description = contentInfo.content?:@"";
             webpageObject.thumbnailData = contentInfo.objData;
