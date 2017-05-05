@@ -127,6 +127,8 @@
 		57CEF9B01EA8A04B009E7584 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CEF9AC1EA8A04B009E7584 /* libWeChatSDK.a */; };
 		57CEF9B31EA8A0E1009E7584 /* FFSinaCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CEF9B21EA8A0E1009E7584 /* FFSinaCenter.m */; };
 		57CEF9B61EA8A16E009E7584 /* SinaAuthRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CEF9B51EA8A16E009E7584 /* SinaAuthRequest.m */; };
+		A602F1C51EBCC8D100EFD76D /* BookCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A602F1C31EBCC8D100EFD76D /* BookCollectionCell.m */; };
+		A602F1C61EBCC8D100EFD76D /* BookCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A602F1C41EBCC8D100EFD76D /* BookCollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -382,6 +384,9 @@
 		57CEF9B21EA8A0E1009E7584 /* FFSinaCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSinaCenter.m; sourceTree = "<group>"; };
 		57CEF9B41EA8A16E009E7584 /* SinaAuthRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaAuthRequest.h; sourceTree = "<group>"; };
 		57CEF9B51EA8A16E009E7584 /* SinaAuthRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaAuthRequest.m; sourceTree = "<group>"; };
+		A602F1C21EBCC8D100EFD76D /* BookCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookCollectionCell.h; sourceTree = "<group>"; };
+		A602F1C31EBCC8D100EFD76D /* BookCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookCollectionCell.m; sourceTree = "<group>"; };
+		A602F1C41EBCC8D100EFD76D /* BookCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookCollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -504,6 +509,9 @@
 				5792F08E1EB9C2CB00E42A5C /* BookCell.h */,
 				5792F08F1EB9C2CB00E42A5C /* BookCell.m */,
 				5792F0901EB9C2CB00E42A5C /* BookCell.xib */,
+				A602F1C21EBCC8D100EFD76D /* BookCollectionCell.h */,
+				A602F1C31EBCC8D100EFD76D /* BookCollectionCell.m */,
+				A602F1C41EBCC8D100EFD76D /* BookCollectionCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1062,6 +1070,7 @@
 				57783C151EAA0DDB00069CBA /* Test5ViewController.xib in Resources */,
 				576267BD1EA9FC1D00400ABA /* FFRefreshHeaderView.xib in Resources */,
 				57783C1A1EAA0E3100069CBA /* SSTabBarView.xib in Resources */,
+				A602F1C61EBCC8D100EFD76D /* BookCollectionCell.xib in Resources */,
 				57CEF9A51EA8A01F009E7584 /* WeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1167,6 +1176,7 @@
 				57CEF9261EA86B2B009E7584 /* SDWebImageDownloaderOperation.m in Sources */,
 				57CEF9331EA86B6C009E7584 /* FFBinaryData.m in Sources */,
 				57CEF9561EA86BE6009E7584 /* NSObject+MJProperty.m in Sources */,
+				A602F1C51EBCC8D100EFD76D /* BookCollectionCell.m in Sources */,
 				57CEF9511EA86BE6009E7584 /* MJPropertyKey.m in Sources */,
 				57CEF8DF1EA8603C009E7584 /* UIView+FFView.m in Sources */,
 				578E0C311EAE08C60093F66A /* TestModel.m in Sources */,
