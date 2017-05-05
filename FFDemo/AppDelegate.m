@@ -9,7 +9,10 @@
 #import "AppDelegate.h"
 
 #import "SSTabBarView.h"
+
 #import "FFBaseShareCenter.h"
+
+#import "FFBaseRequest.h"
 
 @interface AppDelegate ()
 
@@ -39,7 +42,10 @@
     NSDictionary *redirectURIDict = @{SinaRedirectURIKey : @"https://api.weibo.com/oauth2/default.html"};
     [FFBaseShareCenter setAppId:appIdDict appSecret:appSecret redirectURI:redirectURIDict];
     
+    [FFBaseRequest starNetWorkReachability];
+
     [self.window makeKeyAndVisible];
+    
     
     return YES;
 }

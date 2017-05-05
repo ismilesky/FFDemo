@@ -66,15 +66,15 @@ static NSString *FFPathKey = @"path";
         _fileName = fileName;
         _filePath = [downloadPath stringByAppendingPathComponent:fileName];
         
-        BOOL isWIFI = [FFBaseRequest fetchReachabilityStatus] == FFNetworkReachabilityStatusReachableViaWiFi;
-        BOOL isAllowUseMobileNetwork = [NSUserDefaults boolValueForKey:FFDownloadAllowUseMobileNetworkKey];
-        if (isWIFI) {
+//        BOOL isWIFI = [FFBaseRequest fetchReachabilityStatus] == FFNetworkReachabilityStatusReachableViaWiFi;
+//        BOOL isAllowUseMobileNetwork = [NSUserDefaults boolValueForKey:FFDownloadAllowUseMobileNetworkKey];
+//        if (isWIFI) {
             [self doDownloadWithPath:_downloadPath fileName:_fileName];
-        } else if (isAllowUseMobileNetwork) {
-            [self doDownloadWithPath:_downloadPath fileName:_fileName];
-        } else {
-            [[NSNotificationCenter defaultCenter] postNotificationName:FFDownloadAllowUseMobileNetworkNotification object:nil userInfo:nil];
-        }
+//        } else if (isAllowUseMobileNetwork) {
+//            [self doDownloadWithPath:_downloadPath fileName:_fileName];
+//        } else {
+//            [[NSNotificationCenter defaultCenter] postNotificationName:FFDownloadAllowUseMobileNetworkNotification object:nil userInfo:nil];
+//        }
     }
     return self;
 }
