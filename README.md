@@ -43,7 +43,7 @@
 
 `FFBaseRequest` 网络请求类
 
-EXample:
+Example:
 
 ```
 - (void)getNetData:(BOOL)isRefresh {
@@ -179,7 +179,7 @@ Example:
 
 `FFTableView`, `FFCollectionView` 下拉刷新和上拉加载的使用
 
-EXample:
+Example:
 
 ```
 - (void)getRequest:(BOOL) isRefresh {
@@ -242,7 +242,7 @@ EXample:
 
 `FFTabBarView` 自定义TabBar, 继承 `FFTabBarView`
 
-EXample:
+Example:
 
 ```
 - (IBAction)onButtonTouched:(id)sender {
@@ -300,3 +300,6 @@ EXample:
 
 ```
 
+## Support
+- 疑问或建议 [new issue](https://github.com/ismilesky/FFDemo/issues/new)
+- [http://blog.csdn.net/ismilesky](http://blog.csdn.net/ismilesky)
