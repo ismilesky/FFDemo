@@ -52,7 +52,7 @@ extern NSString * const WeChatAppSecretKey;
 + (SourceAppType)sourceAppTypeWithSourceAppString:(NSString *)sourceApplication;
 
 /**
-   在appDelegate设置
+   在appDelegate，- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation 里面实现该方法
  */
 + (BOOL)handlerOpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication;
 /**
@@ -63,7 +63,23 @@ extern NSString * const WeChatAppSecretKey;
  *  @param redirectURIDict key 为SinaRedirectURIKey,... value为各平台的RedirectURI
  */
 + (void)setAppId:(NSDictionary *)appIdDict appSecret:(NSDictionary *)appSecretDict redirectURI:(NSDictionary *)redirectURIDict;
+
+/**
+ *  获取分享平台
+ *
+ *  @param shareType 分享类型
+ *  @return 分享平台
+ */
 + (FFBaseShareCenter *)getShareCenterWithShareType:(ShareType)shareType;
+
+/**
+ *  分享
+ *
+ *  @param contentInfo  分享信息
+ *  @param successBlock 成功回调
+ *  @param cancelBlock  取消回调
+ *  @param failureBlock 失败回调
+ */
 - (void)shareContentInfo:(ShareContentInfo *)contentInfo successBlock:(ShareSuccessBlock)successBlock cancelBlock:(ShareCancelBlock)cancelBlock failureBlock:(ShareFailureBlock)failureBlock;
 - (void)executeFailureBlock:(ShareFailureBlock)failureBlock errorDomain:(NSString *)ErrorDomain errorMsg:(NSString *)errorMsg errorCode:(NSInteger)errorCode;
 @end

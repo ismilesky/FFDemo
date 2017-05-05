@@ -10,8 +10,11 @@
 
 @interface FFTableView : UITableView
 - (void)setRefreshHeaderViewBottom:(float)bottom;
-- (void)didFinishedLoading;
 
+/**
+ 结束加载
+ */
+- (void)didFinishedLoading;
 
 /**
  @param refreshBlock 刷新

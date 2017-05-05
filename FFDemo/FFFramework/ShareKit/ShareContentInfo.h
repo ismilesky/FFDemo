@@ -27,7 +27,39 @@ typedef NS_ENUM(NSUInteger, ShareContentType) {
 @property (nonatomic, assign) ShareContentType contentType;
 @property (nonatomic, assign) ShareType shareType;
 
+
+/**
+ *  获取分享信息
+ *
+ *  @param title 标题
+ *  @param content 内容
+ *  @param contentType 分享的类型
+ *  @return ShareContentInfo
+ */
 + (instancetype)shareTitle:(NSString *)title content:(NSString *)content contentType:(ShareContentType)contentType;
+
+/**
+ *  获取分享信息
+ *
+ *  @param title 标题
+ *  @param content 内容
+ *  @param url 链接
+ *  @param imgPath 图片地址
+ *  @param contentType 分享的类型
+ *  @return ShareContentInfo
+ */
 + (instancetype)shareTitle:(NSString *)title content:(NSString *)content url:(NSString *)url imagePath:(NSString *)imgPath contentType:(ShareContentType)contentType;
+
+/**
+ *  获取分享信息
+ *
+ *  @param title 标题
+ *  @param content 内容
+ *  @param url 链接
+ *  @param imgPath 图片地址
+ *  @param objData 图片二进制文件
+ *  @param contentType 分享的类型
+ *  @return ShareContentInfo
+ */
 + (instancetype)shareTitle:(NSString *)title content:(NSString *)content url:(NSString *)url imagePath:(NSString *)imgPath objData:(NSData *)objData contentType:(ShareContentType)contentType;
 @end
