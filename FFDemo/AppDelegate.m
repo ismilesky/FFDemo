@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#import "SSTabBarView.h"
+#import "FFBaseShareCenter.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,9 +20,37 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    SSTabBarView *tabBar = [SSTabBarView createTabBarView];
+    [self.window addSubview:tabBar];
+    self.window.rootViewController = tabBar.tabBarController;
+    [SSTabBarView selectedIndex:0];
+    
+    tabBar.tabBarController.view.alpha = 0;
+    [UIView animateWithDuration:0.25 animations:^{
+        tabBar.tabBarController.view.alpha = 1;
+    }];
+    
+    
+    NSDictionary *appIdDict = @{QQAppIdKey : @"自己申请",
+                                SinaAppIdKey : @"2107117237",
+                                WeChatAppIdKey : @"自己申请"};
+    NSDictionary *appSecret = @{WeChatAppSecretKey : @"自己申请"};
+    NSDictionary *redirectURIDict = @{SinaRedirectURIKey : @"https://api.weibo.com/oauth2/default.html"};
+    [FFBaseShareCenter setAppId:appIdDict appSecret:appSecret redirectURI:redirectURIDict];
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    NSLog(@"------>>> %@",url);
+    
+#warning Attention
+    return [FFBaseShareCenter handlerOpenURL:url sourceApplication:sourceApplication];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
