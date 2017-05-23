@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		570522AA1EB336C3005C368D /* benz.png in Resources */ = {isa = PBXBuildFile; fileRef = 570522A91EB336C3005C368D /* benz.png */; };
 		570522AF1EB34CF7005C368D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570522AD1EB34CF7005C368D /* Main.storyboard */; };
+		575581721ED4402C008F3071 /* FFLinearLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 575581711ED4402C008F3071 /* FFLinearLayout.m */; };
 		576267951EA9B08C00400ABA /* FFTencentCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 576267941EA9B08C00400ABA /* FFTencentCenter.m */; };
 		576267981EA9B1BD00400ABA /* WXAuthRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 576267971EA9B1BD00400ABA /* WXAuthRequest.m */; };
 		5762679B1EA9B2B000400ABA /* FFWeChatCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5762679A1EA9B2B000400ABA /* FFWeChatCenter.m */; };
@@ -153,6 +154,8 @@
 		570522A91EB336C3005C368D /* benz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = benz.png; sourceTree = "<group>"; };
 		570522AB1EB33D53005C368D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		570522AE1EB34CF7005C368D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		575581701ED4402C008F3071 /* FFLinearLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFLinearLayout.h; sourceTree = "<group>"; };
+		575581711ED4402C008F3071 /* FFLinearLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFLinearLayout.m; sourceTree = "<group>"; };
 		576267931EA9B08C00400ABA /* FFTencentCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTencentCenter.h; sourceTree = "<group>"; };
 		576267941EA9B08C00400ABA /* FFTencentCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTencentCenter.m; sourceTree = "<group>"; };
 		576267961EA9B1BD00400ABA /* WXAuthRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAuthRequest.h; sourceTree = "<group>"; };
@@ -426,6 +429,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5755816F1ED4402C008F3071 /* FFLinearLayout */ = {
+			isa = PBXGroup;
+			children = (
+				575581701ED4402C008F3071 /* FFLinearLayout.h */,
+				575581711ED4402C008F3071 /* FFLinearLayout.m */,
+			);
+			path = FFLinearLayout;
+			sourceTree = "<group>";
+		};
 		5762679C1EA9B99400400ABA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -732,6 +744,7 @@
 		57CEF8C91EA85944009E7584 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5755816F1ED4402C008F3071 /* FFLinearLayout */,
 				576267B11EA9F7CA00400ABA /* FFTableView.h */,
 				576267B21EA9F7CA00400ABA /* FFTableView.m */,
 				57783BF41EAA062300069CBA /* FFCollectionView.h */,
@@ -1186,6 +1199,7 @@
 				57CEF9511EA86BE6009E7584 /* MJPropertyKey.m in Sources */,
 				57CEF8DF1EA8603C009E7584 /* UIView+FFView.m in Sources */,
 				578E0C311EAE08C60093F66A /* TestModel.m in Sources */,
+				575581721ED4402C008F3071 /* FFLinearLayout.m in Sources */,
 				57CEF8EF1EA865CC009E7584 /* UITextField+FFTextField.m in Sources */,
 				57CEF9211EA86B2B009E7584 /* SDImageCache.m in Sources */,
 				57783C051EAA0DAB00069CBA /* Test2ViewController.m in Sources */,
