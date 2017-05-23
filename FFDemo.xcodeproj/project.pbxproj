@@ -41,6 +41,7 @@
 		57783C1A1EAA0E3100069CBA /* SSTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57783C181EAA0E3100069CBA /* SSTabBarView.xib */; };
 		57783C1D1EAA0FD700069CBA /* FFBaseSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57783C1C1EAA0FD700069CBA /* FFBaseSplitViewController.m */; };
 		57783C231EAA11C800069CBA /* TestRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57783C221EAA11C800069CBA /* TestRequest.m */; };
+		5779D5F91ED3DDED00EA4C7A /* UIColor+HexClolor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5779D5F81ED3DDED00EA4C7A /* UIColor+HexClolor.m */; };
 		578E0C311EAE08C60093F66A /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E0C301EAE08C60093F66A /* TestModel.m */; };
 		5791DCFB1EB187C800C0C1A2 /* FFBottomOptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791DCFA1EB187C800C0C1A2 /* FFBottomOptView.m */; };
 		5791DCFF1EB32ECD00C0C1A2 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791DCFE1EB32ECD00C0C1A2 /* UIImage+ImageEffects.m */; };
@@ -202,6 +203,8 @@
 		57783C1C1EAA0FD700069CBA /* FFBaseSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFBaseSplitViewController.m; sourceTree = "<group>"; };
 		57783C211EAA11C800069CBA /* TestRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRequest.h; sourceTree = "<group>"; };
 		57783C221EAA11C800069CBA /* TestRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRequest.m; sourceTree = "<group>"; };
+		5779D5F71ED3DDED00EA4C7A /* UIColor+HexClolor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexClolor.h"; sourceTree = "<group>"; };
+		5779D5F81ED3DDED00EA4C7A /* UIColor+HexClolor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexClolor.m"; sourceTree = "<group>"; };
 		578E0C2F1EAE08C60093F66A /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
 		578E0C301EAE08C60093F66A /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
 		5791DCF91EB187C800C0C1A2 /* FFBottomOptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFBottomOptView.h; sourceTree = "<group>"; };
@@ -651,6 +654,8 @@
 				57CEF8EE1EA865CC009E7584 /* UITextField+FFTextField.m */,
 				57CEF8F01EA86706009E7584 /* NSMutableArray+FFMutableArray.h */,
 				57CEF8F11EA86706009E7584 /* NSMutableArray+FFMutableArray.m */,
+				5779D5F71ED3DDED00EA4C7A /* UIColor+HexClolor.h */,
+				5779D5F81ED3DDED00EA4C7A /* UIColor+HexClolor.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1172,6 +1177,7 @@
 				57CEF91E1EA86B2B009E7584 /* MKAnnotationView+WebCache.m in Sources */,
 				57CEF94F1EA86BE6009E7584 /* MJFoundation.m in Sources */,
 				57CEF9791EA892F3009E7584 /* AFURLRequestSerialization.m in Sources */,
+				5779D5F91ED3DDED00EA4C7A /* UIColor+HexClolor.m in Sources */,
 				57783C231EAA11C800069CBA /* TestRequest.m in Sources */,
 				57CEF9261EA86B2B009E7584 /* SDWebImageDownloaderOperation.m in Sources */,
 				57CEF9331EA86B6C009E7584 /* FFBinaryData.m in Sources */,
